@@ -16,7 +16,6 @@ function Log-Message{
     $today.ToString() + " : " + $Message >> $logFile
 }
 
-
 while($true)
 {
     # Wait 60 seconds before new check

@@ -1,3 +1,11 @@
-# automation
+# Azure Scripts and Custom Codes
 
-Simples scripts de Automation para Azure
+Scripts for Azure
+
+# Automation
+
+Simple scripts to Start and Stop a Virtual Machine using certificates
+
+# Aure VPN
+
+ 

@@ -2,10 +2,14 @@
 
 Scripts for Azure
 
-# Automation
+@Automation
 
 Simple scripts to Start and Stop a Virtual Machine using certificates
 
-# Aure VPN
+@AzureVPN-AutoScript
+
+Script to auto connect to Azure Point to Site gateway
+
+
 
  

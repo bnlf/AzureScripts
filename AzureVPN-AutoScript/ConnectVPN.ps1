@@ -43,7 +43,7 @@ while($true)
 
     # Check if a cloud server can be contacted
     # Replace with your Azure server private IP
-    $azureServerIp = '10.0.0.36'    
+    $azureServerIp = "10.0.0.36"    
     $result = gwmi -query "SELECT * FROM Win32_PingStatus WHERE Address = '$azureServerIp'" 
     if ($result.StatusCode -eq 0) { 
         Log-Message -Message "Server $azureServerIp is up."
@@ -62,7 +62,7 @@ while($true)
 
         # Check assined IP address
         # Replace with your Azure VNET Point to site IP segment
-        $azureVnetP2SRange = '172.16.0'
+        $azureVnetP2SRange = "172.16.0"
         $azureIpAddress = ipconfig | findstr $azureVnetP2SRange
         
         $azureIpAddress = $azureIpAddress.Split(": ")
@@ -76,7 +76,7 @@ while($true)
         }
 
         # Delete any previous configured routes for these ip ranges
-        $azureVnetRange = '10.0.0.0'
+        $azureVnetRange = "10.0.0.0"
         $routeExists = route print | findstr $azureVnetRange
         if($routeExists) {
             Log-Message -Message "Deleting route to Azure: $azureVnetRange"

@@ -18,4 +18,3 @@ Login-AzureRmAccount -Credential $Cred -SubscriptionId $SubscriptionId
 #Get storage context
 #New-AzureRmSqlDatabaseExport -ResourceGroupName "" -ServerName "" -DatabaseName "" -StorageKeyType "StorageAccessKey" -StorageKey "" -StorageUri "" -AdministratorLogin $ApplicationId -AdministratorLoginPassword $secpasswd -AuthenticationType "AdPassword"
 
-Write-Warning –Message "This is a warning message."
